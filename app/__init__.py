@@ -122,7 +122,7 @@ def search():
     db = connect_db()
     tabs = tables(db)
     cols = columns(tabs, db)
-    return render_template('search.html', title = "HumanAPI", tables = tabs, columns = cols, data = {})
+    return render_template('search.html', title = "Data", tables = tabs, columns = cols, data = {})
 
 @app.route('/process', methods = ["POST", "GET"])
 def process(): 
